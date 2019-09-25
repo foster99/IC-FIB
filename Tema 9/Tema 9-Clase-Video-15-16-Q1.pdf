@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+
+<html  dir="ltr" lang="ca" xml:lang="ca">
+<head>
+    <title>Campus Virtual UPC: Opció d'autenticació</title>
+    <link rel="shortcut icon" href="https://atenea.upc.edu/theme/image.php/campus/theme/1507183334/favicon" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1059.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+<meta name="keywords" content="moodle, Campus Virtual UPC: Opció d'autenticació" />
+<link rel="stylesheet" type="text/css" href="https://atenea.upc.edu/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.css" /><script id="firstthemesheet" type="text/css">/** Required in order to fix style inclusion problems in IE with YUI **/</script><link rel="stylesheet" type="text/css" href="https://atenea.upc.edu/theme/styles.php/campus/1507183334/all" />
+<script type="text/javascript">
+//<![CDATA[
+var M = {}; M.yui = {};
+M.pageloadstarttime = new Date();
+M.cfg = {"wwwroot":"https:\/\/atenea.upc.edu","sesskey":"UzZnTGQGVa","loadingicon":"https:\/\/atenea.upc.edu\/theme\/image.php\/campus\/core\/1507183334\/i\/loading_small","themerev":"1507183334","slasharguments":1,"theme":"campus","jsrev":"1507183334","admin":"admin","svgicons":true};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
+var yui2ConfigFn = function(me) {var parts=me.name.replace(/^moodle-/,'').split('-'),component=parts.shift(),module=parts[0],min='-min';if(/-(skin|core)$/.test(me.name)){parts.pop();me.type='css';min=''}
+if(module){var filename=parts.join('-');me.path=component+'/'+module+'/'+filename+min+'.'+me.type}else{me.path=component+'/'+component+'.'+me.type}};
+YUI_config = {"debug":false,"base":"https:\/\/atenea.upc.edu\/lib\/yuilib\/3.17.2\/","comboBase":"https:\/\/atenea.upc.edu\/theme\/yui_combo.php?","combine":true,"filter":null,"insertBefore":"firstthemesheet","groups":{"yui2":{"base":"https:\/\/atenea.upc.edu\/lib\/yuilib\/2in3\/2.9.0\/build\/","comboBase":"https:\/\/atenea.upc.edu\/theme\/yui_combo.php?","combine":true,"ext":false,"root":"2in3\/2.9.0\/build\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"https:\/\/atenea.upc.edu\/theme\/yui_combo.php?m\/1507183334\/","combine":true,"comboBase":"https:\/\/atenea.upc.edu\/theme\/yui_combo.php?","ext":false,"root":"m\/1507183334\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":null,"modules":{"moodle-core-languninstallconfirm":{"requires":["base","node","moodle-core-notification-confirm","moodle-core-notification-alert"]},"moodle-core-formchangechecker":{"requires":["base","event-focus","moodle-core-event"]},"moodle-core-maintenancemodetimer":{"requires":["base","node"]},"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core-chooserdialogue":{"requires":["base","panel","moodle-core-notification"]},"moodle-core-checknet":{"requires":["base-base","moodle-core-notification-alert","io-base"]},"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core-popuphelp":{"requires":["moodle-core-tooltip"]},"moodle-core-formautosubmit":{"requires":["base","event-key"]},"moodle-core-event":{"requires":["event-custom"]},"moodle-core-notification":{"requires":["moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core-notification-confirm","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core-notification-dialogue":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-confirm":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-exception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-ajaxexception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-dock":{"requires":["base","node","event-custom","event-mouseenter","event-resize","escape","moodle-core-dock-loader","moodle-core-event"]},"moodle-core-dock-loader":{"requires":["escape"]},"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core-tooltip":{"requires":["base","node","io-base","moodle-core-notification-dialogue","json-parse","widget-position","widget-position-align","event-outside","cache-base"]},"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core_availability-form":{"requires":["base","node","event","event-delegate","panel","moodle-core-notification-dialogue","json"]},"moodle-backup-backupselectall":{"requires":["node","event","node-event-simulate","anim"]},"moodle-backup-confirmcancel":{"requires":["node","node-event-simulate","moodle-core-notification-confirm"]},"moodle-calendar-info":{"requires":["base","node","event-mouseenter","event-key","overlay","moodle-calendar-info-skin"]},"moodle-course-modchooser":{"requires":["moodle-core-chooserdialogue","moodle-course-coursebase"]},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-notification-exception","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-course-toolboxes":{"requires":["node","base","event-key","node","io","moodle-course-coursebase","moodle-course-util"]},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-course-formatchooser":{"requires":["base","node","node-event-simulate"]},"moodle-form-showadvanced":{"requires":["node","base","selector-css3"]},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-form-shortforms":{"requires":["node","base","selector-css3","moodle-core-event"]},"moodle-form-passwordunmask":{"requires":[]},"moodle-question-qbankmanager":{"requires":["node","selector-css3"]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-question-preview":{"requires":["base","dom","event-delegate","event-key","core_question_engine"]},"moodle-question-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-qtype_ddimageortext-form":{"requires":["moodle-qtype_ddimageortext-dd","form_filepicker"]},"moodle-qtype_ddimageortext-dd":{"requires":["node","dd","dd-drop","dd-constrain"]},"moodle-qtype_ddmarker-form":{"requires":["moodle-qtype_ddmarker-dd","form_filepicker","graphics","escape"]},"moodle-qtype_ddmarker-dd":{"requires":["node","event-resize","dd","dd-drop","dd-constrain","graphics"]},"moodle-qtype_ddwtos-dd":{"requires":["node","dd","dd-drop","dd-constrain"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_bigbluebuttonbn-modform":{"requires":["base","node"]},"moodle-mod_forum-subscriptiontoggle":{"requires":["base-base","io-base"]},"moodle-mod_quiz-repaginate":{"requires":["base","event","node","io","moodle-core-notification-dialogue"]},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form"]},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-mod_quiz-quizquestionbank":{"requires":["base","event","node","io","io-form","yui-later","moodle-question-qbankmanager","moodle-core-notification-dialogue"]},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-mod_quiz-randomquestion":{"requires":["base","event","node","io","moodle-core-notification-dialogue"]},"moodle-mod_quiz-util":{"requires":["node","moodle-core-actionmenu"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_quiz-util","querystring-parse"]},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-message_airnotifier-toolboxes":{"requires":["base","node","io"]},"moodle-filter_glossary-autolinker":{"requires":["base","node","io-base","json-parse","event-delegate","overlay","moodle-core-event","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-filter_mathjaxloader-loader":{"requires":["moodle-core-event"]},"moodle-editor_atto-editor":{"requires":["node","transition","io","overlay","escape","event","event-simulate","event-custom","node-event-html5","node-event-simulate","yui-throttle","moodle-core-notification-dialogue","moodle-core-notification-confirm","moodle-editor_atto-rangy","handlebars","timers","querystring-stringify"]},"moodle-editor_atto-plugin":{"requires":["node","base","escape","event","event-outside","handlebars","event-custom","timers","moodle-editor_atto-menu"]},"moodle-editor_atto-menu":{"requires":["moodle-core-notification-dialogue","node","event","event-custom"]},"moodle-editor_atto-rangy":{"requires":[]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-report_loglive-fetchlogs":{"requires":["base","event","node","io","node-event-delegate"]},"moodle-gradereport_grader-gradereporttable":{"requires":["base","node","event","handlebars","overlay","event-hover"]},"moodle-gradereport_history-userselector":{"requires":["escape","event-delegate","event-key","handlebars","io-base","json-parse","moodle-core-notification-dialogue"]},"moodle-tool_capability-search":{"requires":["base","node"]},"moodle-tool_lp-dragdrop-reorder":{"requires":["moodle-core-dragdrop"]},"moodle-tool_monitor-dropdown":{"requires":["base","event","node"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","transition","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-atto_accessibilitychecker-button":{"requires":["color-base","moodle-editor_atto-plugin"]},"moodle-atto_accessibilityhelper-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_align-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bold-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_charmap-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_clear-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_collapse-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emoticon-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_equation-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_html-button":{"requires":["moodle-editor_atto-plugin","event-valuechange"]},"moodle-atto_image-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_indent-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_italic-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_link-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-usedfiles":{"requires":["node","escape"]},"moodle-atto_managefiles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_media-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_noautolink-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_orderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_rtl-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_strike-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_subscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_superscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_table-button":{"requires":["moodle-editor_atto-plugin","moodle-editor_atto-menu","event","event-valuechange"]},"moodle-atto_title-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_underline-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_undo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_unorderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_wiris-button":{"requires":["moodle-editor_atto-plugin","get"]}}},"gallery":{"name":"gallery","base":"https:\/\/atenea.upc.edu\/lib\/yuilib\/gallery\/","combine":true,"comboBase":"https:\/\/atenea.upc.edu\/theme\/yui_combo.php?","ext":false,"root":"gallery\/1507183334\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"https:\/\/atenea.upc.edu\/lib\/javascript.php\/1507183334\/repository\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker"]},"core_comment":{"name":"core_comment","fullpath":"https:\/\/atenea.upc.edu\/lib\/javascript.php\/1507183334\/comment\/comment.js","requires":["base","io-base","node","json","yui2-animation","overlay","escape"]},"mathjax":{"name":"mathjax","fullpath":"https:\/\/cdn.mathjax.org\/mathjax\/2.7-latest\/MathJax.js?delayStartupUntil=configured"}}};
+M.yui.loader = {modules: {}};
+
+//]]>
+</script>
+
+<meta name="robots" content="noindex" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- petit patch upc -->
+    <style>
+        html, body {
+            height: inherit;
+        }
+        @media (max-width: 576px) {
+            html, body {
+                height: 100%!important;
+            }
+        }
+    </style>
+    <!-- fi petit patch -->
+</head>
+
+<body  id="page-login-index" class="format-site  path-login safari ios dir-ltr lang-ca yui-skin-sam yui3-skin-sam atenea-upc-edu pagelayout-login course-1 context-1 notloggedin tablettheme ">
+
+<div id="page-wrapper">
+    <div>
+    <a class="sr-only sr-only-focusable" href="#maincontent">Vés al contingut principal</a>
+</div><script type="text/javascript" src="https://atenea.upc.edu/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.js&amp;rollup/1507183334/mcore-min.js"></script><script type="text/javascript" src="https://atenea.upc.edu/lib/javascript.php/1507183334/lib/javascript-static.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+document.body.className += ' jsenabled';
+//]]>
+</script>
+
+
+
+    <div id="page" class="container-fluid">
+        <div id="page-content" class="row">
+            <div id="region-main-box">
+                <section id="region-main" class="col-xs-12">
+                    <span class="notifications" id="user-notifications"></span>
+                    <div role="main"><span id="maincontent"></span><div class="loginbox clearfix">
+<div class="loginpanel">
+<img src="https://atenea.upc.edu/pluginfile.php/1/core_admin/logo/0x200/1507183334/logo_upc_atenea.png" class="logo" /><h1>Plataforma de Suport a la Docència</h1>
+<div class="subcontent loginsub">
+  </div>
+<div class="caslogin">
+<form action="https://atenea.upc.edu/login/index.php?authCAS=CAS" method="POST">
+  <input type="submit" value="Iniciar sessió" />
+</form>
+</div>
+<div class="subcontent forgetpass"><a href="forgot_password.php">Problemes d'accés</a></div>
+      <div class="subcontent guestsub">
+        <div class="desc">
+          Alguns cursos poden permetre l'accés de visitants        </div>
+        <form action="index.php" method="post" id="guestlogin">
+          <div class="guestform">
+            <input type="hidden" name="username" value="guest" />
+            <input type="hidden" name="password" value="guest" />
+            <input type="submit" value="Inicia sessió com a visitant" />
+          </div>
+        </form>
+      </div>
+</div>
+</div>
+</div>
+                    
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+<footer id="page-footer" class="p-y-1 bg-inverse">
+    <div class="container">
+        <div id="course-footer"></div>
+
+
+        <div class="logininfo2">No heu entrat</div><div class="logininfo"></div>
+        <div class="homelink"><a href="http://atenea.upc.edu/">Inici</a></div>
+        <div class="container-fluid">
+  <div class="row footerblocks">
+    <div class="footerlinks row-fluid">
+          <div class="row margBot">
+            <div class="col-md-3" style="text-align:center;">
+            </div>
+            <div class="col-md-9" style="text-align:right;">
+              <div class="row">
+              <span> <a href="http://www.upc.edu">(c) UPC</a>. Universitat Politècnica de Catalunya · BarcelonaTech<span class="hidden-print"> | Atenea és un web accessible.</span></span>
+              </div>
+              <div class="row">
+              <a href="https://www.w3.org/WAI/WCAG1AA-Conformance.html"><img class="icon img-footer" alt="logo W3c" src="https://atenea.upc.edu/theme/image.php/campus/core/1507183334/w3c" /></a>
+              <a href="https://moodle.org/"><img class="icon img-footer" alt="logo Moodle" src="https://atenea.upc.edu/theme/image.php/campus/core/1507183334/moodlelogo" /></a>
+              <a href="http://www.ca.aenor.es/aenor/certificacion/calidad/calidad_serviciosti_20000.asp"><img class="icon img-footer" alt="logo Aenor" src="https://atenea.upc.edu/theme/image.php/campus/core/1507183334/aenor20000" /></a>
+              </div>
+            </div>
+          </div>
+    </div>
+  </div>
+        
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-21641014-3', 'auto');
+  ga('send', 'pageview');
+</script><script type="text/javascript">
+//<![CDATA[
+var require = {
+    baseUrl : 'https://atenea.upc.edu/lib/requirejs.php/1507183334/',
+    // We only support AMD modules with an explicit define() statement.
+    enforceDefine: true,
+    skipDataMain: true,
+    waitSeconds : 0,
+
+    paths: {
+        jquery: 'https://atenea.upc.edu/lib/javascript.php/1507183334/lib/jquery/jquery-3.1.0.min',
+        jqueryui: 'https://atenea.upc.edu/lib/javascript.php/1507183334/lib/jquery/ui-1.12.1/jquery-ui.min',
+        jqueryprivate: 'https://atenea.upc.edu/lib/javascript.php/1507183334/lib/requirejs/jquery-private'
+    },
+
+    // Custom jquery config map.
+    map: {
+      // '*' means all modules will get 'jqueryprivate'
+      // for their 'jquery' dependency.
+      '*': { jquery: 'jqueryprivate' },
+
+      // 'jquery-private' wants the real jQuery module
+      // though. If this line was not here, there would
+      // be an unresolvable cyclic dependency.
+      jqueryprivate: { jquery: 'jquery' }
+    }
+};
+
+//]]>
+</script>
+<script type="text/javascript" src="https://atenea.upc.edu/lib/javascript.php/1507183334/lib/requirejs/require.min.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+require(['core/first'], function() {
+;
+require(["media_videojs/loader"], function(loader) {
+    loader.setUp(function(videojs) {
+        videojs.options.flash.swf = "http://atenea.upc.edu/media/player/videojs/videojs/video-js.swf";
+videojs.addLanguage("ca",{
+ "Play": "Reproducció",
+ "Pause": "Pausa",
+ "Current Time": "Temps reproduït",
+ "Duration Time": "Durada total",
+ "Remaining Time": "Temps restant",
+ "Stream Type": "Tipus de seqüència",
+ "LIVE": "EN DIRECTE",
+ "Loaded": "Carregat",
+ "Progress": "Progrés",
+ "Fullscreen": "Pantalla completa",
+ "Non-Fullscreen": "Pantalla no completa",
+ "Mute": "Silencia",
+ "Unmute": "Amb so",
+ "Playback Rate": "Velocitat de reproducció",
+ "Subtitles": "Subtítols",
+ "subtitles off": "Subtítols desactivats",
+ "Captions": "Llegendes",
+ "captions off": "Llegendes desactivades",
+ "Chapters": "Capítols",
+ "You aborted the media playback": "Heu interromput la reproducció del vídeo.",
+ "A network error caused the media download to fail part-way.": "Un error de la xarxa ha interromput la baixada del vídeo.",
+ "The media could not be loaded, either because the server or network failed or because the format is not supported.": "No s'ha pogut carregar el vídeo perquè el servidor o la xarxa han fallat, o bé perquè el seu format no és compatible.",
+ "The media playback was aborted due to a corruption problem or because the media used features your browser did not support.": "La reproducció de vídeo s'ha interrumput per un problema de corrupció de dades o bé perquè el vídeo demanava funcions que el vostre navegador no ofereix.",
+ "No compatible source was found for this media.": "No s'ha trobat cap font compatible amb el vídeo."
+});
+
+    });
+});;
+
+require(['theme_campus/loader']);
+/* patch A086: Codi afegit */
+require(['jquery'], function($) {
+    $(function () {
+        $.getScript('//atenea.upc.edu/theme/campus/javascript/cookieconsent/cookieconsent.min.js', function() {
+            window.cookieconsent.initialise({
+              "palette": {
+                "popup": {
+                  "background": "#07b"
+                },
+                "button": {
+                  "background": "#07b"
+                }
+              },
+              "content": {
+                "message": 'Aquest web utilitza cookies pròpies per oferir una millor experiència i servei.<br>En continuar amb la navegació entenem que acceptes <a class="cc-link" href="https://www.upcnet.es/ca/politica-de-cookies" target="_blank">la nostra política de cookies</a>',
+                "dismiss": "D'acord",
+                "link": "",
+                "href": ""
+              }
+            });
+        });
+    });
+});
+;
+require(["core/notification"], function(amd) { amd.init(1, []); });;
+require(["core/log"], function(amd) { amd.setConfig({"level":"warn"}); });
+});
+//]]>
+</script>
+<script type="text/javascript" src="https://atenea.upc.edu/lib/javascript.php/1507183334/local/atenea/javascript/atenea.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+M.str = {"moodle":{"lastmodified":"Darrera modificaci\u00f3","name":"Nom","error":"Error","info":"Informaci\u00f3","yes":"S\u00ed","no":"No","ok":"OK","morehelp":"M\u00e9s ajuda","loadinghelp":"S'est\u00e0 carregant...","cancel":"Cancel\u00b7la","confirm":"Confirma","areyousure":"Segur que voleu tirar endavant aquesta acci\u00f3?","closebuttontitle":"Tanca","unknownerror":"Error desconegut"},"repository":{"type":"Tipus","size":"Mida","invalidjson":"Cadena JSON inv\u00e0lida","nofilesattached":"No s'ha adjuntat cap fitxer","filepicker":"Selector de fitxers","logout":"Tanca la sessi\u00f3","nofilesavailable":"Cap fitxer disponible","norepositoriesavailable":"Cap dels vostres repositoris actuals pot retornar fitxers del format requerit.","fileexistsdialogheader":"El fitxer existeix","fileexistsdialog_editor":"Ja s'ha adjuntat un fitxer amb aquest nom al text que esteu editant","fileexistsdialog_filemanager":"Ja s'ha adjuntat un fitxer amb aquest nom","renameto":"Canvia el nom a \"{$a}\"","referencesexist":"Hi ha {$a} \u00e0lies o accessos directes de fitxer que utilitzen aquest fitxer com a font","select":"Selecciona","settings":"Configuraci\u00f3","help":"Ajuda"},"admin":{"confirmdeletecomments":"Esteu a punt d'esborrar comentaris, segur que voleu fer-ho?","confirmation":"Confirmaci\u00f3"}};
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+(function() {setTimeout("fix_column_widths()", 20);
+Y.use("moodle-filter_mathjaxloader-loader",function() {M.filter_mathjaxloader.configure({"mathjaxconfig":"MathJax.Hub.Config({\r\n    config: [\"Accessible.js\", \"Safe.js\"],\r\n    errorSettings: { message: [\"!\"] },\r\n    skipStartupTypeset: true,\r\n    messageStyle: \"none\"\r\n});\r\n","lang":"en"});
+});
+Y.use("moodle-filter_glossary-autolinker",function() {M.filter_glossary.init_filter_autolinking({"courseid":0});
+});
+M.util.help_popups.setup(Y);
+Y.use("moodle-core-popuphelp",function() {M.core.init_popuphelp();
+});
+ M.util.js_pending('random5a0179690ce422'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random5a0179690ce422'); });
+})();
+//]]>
+</script>
+
+    </div>
+</footer>
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"7687c418be","applicationID":"66245837","transactionName":"YlRXMhFYW0JUARcLC1seYBQKFlleUgsNTQ1bVVAeTUldQQ==","queueTime":0,"applicationTime":165,"atts":"ThNURFlCSEw=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
